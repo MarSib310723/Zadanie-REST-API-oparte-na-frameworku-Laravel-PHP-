@@ -24,3 +24,4 @@ Route::post('add-peoples',[PeoplesController::class,'adding']);
 Route::put('edit-peoples',[PeoplesController::class,'edit']);
 Route::delete('delete-peoples',[PeoplesController::class,'delete']);
 Route::get('getdata',[PeoplesController::class,'getdata']);
+Route::get('get_peoples/{id}',[PeoplesController::class, 'getPerson']);
