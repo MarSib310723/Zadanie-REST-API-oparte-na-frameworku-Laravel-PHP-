@@ -44,4 +44,9 @@ class PeoplesController extends Controller
         $items = Peoples::all();
         return response()->json($items);
     }
+    public function getPerson($id)
+    {
+        $items = Peoples::find($id);
+        return response()->json(['person'=>$peoples]);
+    }   
 }
